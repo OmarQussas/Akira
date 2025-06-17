@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+:root{
+    --red-color: #f05a66;
+    --main-font: 'Lato', sans-serif;
+
+    
+}
+
+body{
+    margin: 0;
+    font-family: var(--main-font);
+    height: 3000px;
+}
+
+/**/
+
+.navbar{
+    display: flex;
+    background-color: var(--red-color);
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.navbar .start  {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.navbar .end{
+    display: block;
+    margin-right: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+/* start dropdown */
+
+
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+  }
+
+   .nav-dropdown {
+    position: relative;
+    display: inline;
+    border: 2px solid #f2737d;
+    
+
+  }
+
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130%;
+    border: none;
+    text-transform: uppercase;
+    transform: translateY(1%);
+
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem;
+    width:100%;
+    transition:.3s;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+    .dropdown a:hover{
+        color:red;
+    }
+  
+
+  .dropdown-2 .dropdown-btn{
+    z-index: 2;
+  }
+  /* end dropdown */
+
+
+.navbar .offer{
+    display: flex;    
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+
+.navbar .icon{
+    text-decoration: none;
+    color: white;
+}
+
+
+.navbar .contact{
+    border: 2px solid #f2737d;
+}
+
+.navbar .select-menu{
+  background: transparent;
+  border: none;
+  color: white;
+  width: 70%;
+
+}
+.navbar .select-menu .select-item{
+  background-color: transparent;
+  color: red;
+}
+
+
+
+ /***************** End navbar **************/
+
+
+
+ /* Start Header Section */
+
+ .header{
+  min-width: 320px;
+ }
+
+
+
+ .header .row{
+  width: 100%;
+  justify-content: space-between;
+  max-width: 100%;  
+  min-width: 100px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+ }
+
+
+
+.header .bars-div{
+  /* font-size: 3rem; */
+  color: black;
+  
+}
+
+
+
+.cart{
+  display: flex;
+  border:  2px solid violet;
+  align-items: stretch;
+  width: 10%; 
+  
+  
+}
+
+.header-item{
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+.header a:hover{
+  color: red;
+}
+
+
+
+
+/* End Header Section */
+
+/* Carousel-section */
+
+
+
+.carousel-caption{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:left ;
+  position: absolute;
+  max-width: 45%;
+  left: 10%;
+  height: 80vw;
+  max-height: 80%;
+  bottom: 10%;
+
+
+}
+
+.carousel-caption h1{
+  margin:0;
+  margin-bottom: 1vw;
+  padding: 0;
+  font-size: 1.8vw;
+  text-transform: uppercase;
+  letter-spacing: .5vw;
+  text-align: left;
+  overflow-x: hidden;
+  
+  
+}
+
+.carousel-caption p{
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 4.5vw;
+  text-align: left;
+}
+
+.carousel-caption .carousel-btn{
+  margin: 1vw;
+  align-self: flex-start;
+  border-radius: 0;
+  padding: 1vw 3vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5vw;
+  background-color: var(--red-color)
+}
+
+
+.carousel-caption-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+  position: absolute;
+  max-width: 45%;
+  left: 50%;
+  height: 80vw;
+  max-height: 80%;
+  bottom: 10%;
+  /* border: 2px solid black; */
+  transform: translateX(-50%);
+}
+
+
+.carousel-caption-center h1{
+  margin:0;
+  margin-bottom: 1vw;
+  padding: 0;
+  font-size: 1.8vw;
+  text-transform: uppercase;
+  letter-spacing: .5vw;
+  
+  
+  
+}
+
+.carousel-caption-center p{
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 4.5vw;
+  
+  text-align: center;
+}
+
+.carousel-caption-center .carousel-btn{
+  margin: 1vw;
+  border-radius: 0;
+  padding: 1vw 3vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5vw;
+  background-color: var(--red-color)
+}
+
+
+
+
+/*End  Carousel-section */
+
+
+/* categories section */
+
+
+
+  .categories .categories-item{
+    position: relative;
+    /* border: 5px dotted blue; */
+    height: 30vh;
+    overflow: hidden;
+    
+  }
+
+  .categories .categories-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 2s;
+    
+  }
+
+
+
+  .categories .categories-item .btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    padding: 0.8vw 2vw;
+    border-radius: 0;
+    background-color: rgba(225,215,212,0.8);
+    color: black;
+    border: none;
+    
+  }
+
+  .categories .categories-item .btn:hover{
+    background-color: var(--red-color);
+    color: white;
+  }
+
+  .categories-item:hover img{
+    transform: scale(1.2);
+  }
+/* End categories section */
+
+
+
+/* start featured */
+
+.featured .featured-subtitle{
+  font-size: 1.8vw;
+}
+  .featured .featured-title{
+    font-weight: bold;
+    font-size: 2.6vw;
+  }
+
+
+  .featured-description{
+    font-size: 2vw;
+
+  }
+
+/* end featured */
+
+.our-work{
+  background-color: var(--section-color);
+}
+
+.our-work ul .active{
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.our-work ul li{
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+}
+
+
+
+.our-work .box{
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-work .box::before{
+  content: attr(data-work);
+  position: absolute;
+  background-color: #f05a6694;
+  width:calc(100% - 10px);
+  height:calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+  transform: translateX(0);
+}
+
+
+
+
+
+.our-work .cursor{
+  cursor: pointer;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--red-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+/* end our work */
+
+
+/* start reviews section */
+.reviews .row {
+  background: url(../imgs/demo2-bg_testi.jpg);
+  background-position: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode:overlay;
+  height: 40vh;
+  position: relative;
+  width: calc(99%);
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.reviews .review-caption{
+  color: white;
+  text-align: center;
+  width: 70vw;
+  margin: auto auto auto auto;
+  margin-top:17.5vh;
+  font-size: 1vw;
+
+}
+
+.reviews .reviews-title{
+  position: absolute;
+  width: 50vw;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.reviews .reviews-quotes{
+  position: absolute;
+  width: 50vw;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+
+/* End reviews section */
+
+/* start banner section */
+  .banner{
+    height: 30vh;
+    background-color: #f2f2f2 ;
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: start;
+
+  }
+
+.banner-caption p{
+  font-size: 1.4vw;  
+}
+
+.banner-caption h1{
+  font-size: 1.8vw;
+}
+
+
+.banner .banner-btn{
+  
+  border-radius: 0;
+  padding: 1vw 3vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5vw;
+  background-color: var(--red-color)
+}
+/* end banner section */
